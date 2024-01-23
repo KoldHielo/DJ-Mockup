@@ -13,7 +13,6 @@
 }
 
 body {
-    overflow-x: hidden;
     background-color: #000000;
 }
 
@@ -50,11 +49,22 @@ nav {
 
 #main-video {
     display: block;
-    z-index: -1;
     margin: 0 auto;
-    width: 100px;
-    transform: scale(10) translateY(20px);
+    width: 100px;1
     opacity: 50%;
+    z-index: -1;
+    position: relative;
+    height: auto;
+    transform: scale(10) translateY(20px);
+}
+
+#video-container {
+    width: 100%;
+    overflow-x: hidden;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    height: 545px;
 }
 
 #video-background {
