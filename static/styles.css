@@ -135,15 +135,6 @@ h2 {
 #decks-img {
     display: block;
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
-    top: 0;
-    z-index: -3;
-}
-
-.decks-img:nth-of-type(2) {
-    z-index: -4;
 }
 
 .event {
@@ -161,25 +152,13 @@ h2 {
     width: 230px;
 }
 
-.event-container:last-of-type {
-    padding-bottom: 50px;
-}
-
 #cater-for-section {
-    position: relative;
-    top: var(--top-value);
+    margin-bottom: 50px;
 }
 
 #decks-img-two {
     width: 100%;
     display: block;
-    position: relative;
-    top: var(--top-value);
-}
-
-#pricing-section {
-    position: relative;
-    top: -115px;
 }
 
 .price-package {
