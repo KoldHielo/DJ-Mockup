@@ -23,10 +23,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #d9770f;
-}
-
 nav {
     position: absolute;
     left: 0;
@@ -61,6 +57,10 @@ nav {
     z-index: 1;
     right: 0;
     transition: 1s;
+}
+
+#menu li:hover {
+    color: #d9770f;
 }
 
 @media only screen and (max-width: 1000px) {
