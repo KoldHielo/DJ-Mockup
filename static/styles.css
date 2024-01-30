@@ -92,6 +92,10 @@ nav {
     margin: 550px 0 0 0;
 }
 
+#about-section > div {
+    max-width: 806.4px;
+}
+
 section:not(#main-section) {
     padding: 0 30px;
     background-color: #000000;
@@ -173,6 +177,7 @@ h2 {
     background-color: #FFFFFF;
     padding: 0 60px;
     position: relative;
+    border-radius: 40px;
 }
 
 .price-package * {
@@ -235,6 +240,11 @@ ul {
     margin: 0 auto 40px auto;
 }
 
+form {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
 form > * {
     display: block;
     width: 80%;
@@ -250,6 +260,12 @@ textarea {
     height: 300px;
 }
 
+input, textarea {
+    border-radius: 35px;
+    padding: 10px;
+    font-size: 14px;
+}
+
 button {
     width: 80px;
     margin: 25px auto 0 auto;
@@ -263,6 +279,15 @@ button:hover {
     background-color: #ffd700;
     transform: scale(1.1);
     cursor: pointer;
+}
+
+#message-icon {
+    filter: invert(100%);
+    width: 200px;
+    display: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer {
@@ -321,6 +346,7 @@ footer * {
 
     #dj-icon-two {
         display: block;
+        width: clamp(280px, 60%, 400px);
     }
 
     #about-section {
@@ -339,17 +365,45 @@ footer * {
     #we-do-wpn {
         display: flex;
         justify-content: center;
-        gap: 80px;
+        gap: 15%;
     }
 
     #we-do-everything {
         margin: 170px auto 0 auto;
     }
 
+    #we-do-everything .event {
+        width: 300px;
+    }
+
+    #we-do-everything h2 {
+        font-size: 30px;
+        width: 300px;
+    }
+
     #pricing-section {
         display: flex;
         justify-content: center;
         gap: 15px;
+    }
+
+    #contact-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #contact-section h2 {
+        font-size: 36px;
+    }
+
+    #message-icon {
+        display: block;
+    }
+
+    form {
+        margin: 0;
     }
 }
 
