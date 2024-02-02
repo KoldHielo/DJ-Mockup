@@ -3,6 +3,11 @@ const menuButton = document.querySelector('#menu-button');
 const menuButtonBars = menuButton.querySelectorAll('.bar');
 const menuAnchors = document.querySelectorAll('#menu a');
 const menu = document.querySelector('#menu');
+const body = document.querySelector('body');
+
+window.addEventListener('load', () => {
+    body.style.display = 'block';
+})
 
 const scrollFunc = () => {
     const viewportBottom = window.scrollY + window.innerHeight;
